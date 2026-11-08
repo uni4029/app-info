@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="不動産リサーチにおけるGoogle Driveデータの取得、利用、保存、外部送信、保持・削除、連携解除について。">
+  <title>プライバシーポリシー | 不動産リサーチ</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;color:#182e2b;background:#f5f6f2;line-height:1.9}*{box-sizing:border-box}body{margin:0}main{max-width:760px;margin:auto;padding:64px 24px}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.9rem}a{color:#176854;text-underline-offset:.22em;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #dc9a39;outline-offset:4px}h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.5;margin:48px 0 12px}h2{font-size:1.15rem;margin:32px 0 10px}p{margin:10px 0}li{margin:8px 0}ul{padding-left:1.4em}.date,footer{font-size:.85rem;color:#53655e}footer{border-top:1px solid #d5dfd9;padding-top:24px;margin-top:40px}code{font-size:.85em;overflow-wrap:anywhere}
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="メインナビゲーション"><a href="../">アプリ一覧</a><a href="./">アプリ紹介</a><a href="privacy.html" aria-current="page">プライバシーポリシー</a></nav>
+  <h1>プライバシーポリシー</h1>
+  <p class="date">最終更新日：2026年11月9日</p>
+  <p>不動産リサーチ（以下「本アプリ」）は、uni4029が本人の不動産調査・資料管理のために運用するツールです。Google Driveとの連携で扱う情報について、以下のとおり定めます。</p>
+  <h2>取得する情報と権限</h2>
+  <p>本人の認可により、指定フォルダ配下のファイル・フォルダの識別子、名前、種類、親子関係、更新情報などのメタデータと、調査に必要なファイル本文・資料を取得します。認可の維持に必要なアクセストークン・更新トークンも扱います。</p>
+  <p>Googleに要求する権限は <code>https://www.googleapis.com/auth/drive</code> です。Google側ではDrive全体への権限ですが、本アプリは対象を指定フォルダとその配下に制限し、対象範囲を操作時に確認します。</p>
+  <h2>利用目的</h2>
+  <p>資料の読み取り・解析、不動産情報の整理、収支試算、調査結果の検索、原資料と結果の版別保存・再取得に使用します。本人の操作・指示に応じて、対象範囲内のファイルの作成・更新・移動・ゴミ箱への移動・復元を行います。</p>
+  <h2>保存先と安全管理</h2>
+  <p>調査データ・解析結果・処理履歴は、本人用アプリのデータベース（Cloudflare D1）に保存し、原資料・調査結果・過去の版は本人のGoogle Driveに保存します。Driveに保存できない間も、アプリ内のデータと未同期状態を保持します。</p>
+  <p>アプリの利用は所有者に制限しています。Googleの更新トークンとクライアントシークレットはサーバー側で暗号化して保存します。認証情報を公開ページに掲載しません。</p>
+  <h2>外部サービスへの送信</h2>
+  <p>Google Drive APIによる読み書きにはGoogle、アプリの実行・保存にはOpenAIのSitesとCloudflare、資料の読解・構造化・調査支援にはOpenAIのChatGPTを利用します。資料の本文や解析結果など、本人が依頼した処理に必要な情報がこれらのサービスで処理されます。ChatGPT側の会話・データの保持は、本人が利用するプラン・設定と提供元の規定に従います。</p>
+  <p>Googleから取得したデータは、本アプリの調査・資料管理機能の提供に使用し、販売、広告配信、汎用AIモデルの開発・学習を目的に利用・転送しません。本アプリによるGoogle APIからの情報の利用および他のアプリへの転送は、Limited Use要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+  <h2>保持と削除</h2>
+  <p>調査の履歴を参照するため、自動削除期限は設けず、本人が削除するまでデータと過去の版を保持します。削除する場合は、アプリ内のデータ、Drive上の原資料・保存版、必要に応じてChatGPTの会話を、それぞれ削除する必要があります。Drive上のファイルをゴミ箱へ移すだけでは完全削除されません。</p>
+  <p>アプリ内のデータや保存済み認証情報の削除については、下記窓口へお問い合わせください。運営者が対象を確認して対応します。各サービス側のバックアップ等の保持は、各提供元の規定に従います。</p>
+  <h2>Google連携の解除</h2>
+  <p><a href="https://myaccount.google.com/connections">Googleアカウントの接続管理</a>で本アプリのアクセス権を削除できます。解除後はGoogleへの新たなアクセスができなくなりますが、取得済みのデータやDrive上のファイルは自動削除されません。必要に応じて前項の削除も行ってください。</p>
+  <h2>この公開サイトと問い合わせ</h2>
+  <p>この公開サイトはアプリの紹介とポリシーのみを掲載します。アクセス時の通信情報は、ホスティング提供元のGitHubで処理されます。</p>
+  <p>運営：<a href="https://github.com/uni4029">uni4029</a><br>問い合わせ先：<a href="https://github.com/uni4029/app-info/issues">GitHub Issues</a></p>
+  <p>Issuesへの投稿は一般公開され、投稿にはGitHubアカウントが必要です。個人情報、物件資料、認証情報を投稿せず、問い合わせの概要のみをお知らせください。</p>
+  <footer><a href="./">不動産リサーチの紹介に戻る</a></footer>
+</main>
+</body>
+</html>
